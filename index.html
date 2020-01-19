@@ -1,0 +1,133 @@
+<html>
+    <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width, initial-scale=1,shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	 <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+	</head>
+    <body>
+       <div class="container-fluid">
+		   <div class="text-center">
+				<header>
+					<h1>Typing Test</h1>
+				</header>
+<!--All the icons started-->
+				<div class="row">
+					<div class="col-3 measurement">
+						<div class="meas-container">
+							<div class="typicon">
+								<img src="images/speed2.png" class="img-fluid" width="40" >
+						
+							</div>
+							<div id="wpm" class="value">60
+							</div>
+							<div class="title"><span>WPM</span>
+							</div>
+						
+						</div>
+						<div class="change">
+						<span id="wpmChange"></span>
+						</div>
+					</div>
+						<div class="col-3 measurement">
+						<div class="meas-container">
+							<div class="typicon">
+								<img src="images/click.png" width="40">
+						
+							</div>
+							<div id="cpm" class="value">0
+							</div>
+							<div class="title"><span>CPM</span>
+							</div>
+						
+						</div>
+						<div class="change">
+						<span id="cpmChange"></span>
+						</div>
+					</div>
+					<div class="col-3 measurement">
+						<div class="meas-container">
+							<div class="typicon">
+								<img src="images/accur.png" width="40">
+						
+							</div>
+							<div id="accuracy" class="value">0%
+							</div>
+							<div class="title"><span>Accuracy</span>
+							</div>
+						
+						</div>
+						<div class="change">
+						<span id="accuracyChange"></span>
+						</div>
+					</div>
+					<div class="col-3 measurement">
+						<div class="meas-container">
+							<div class="typicon">
+								<img src="images/time.png" width="40">
+						
+							</div>
+							<div id="timeLeft" class="value">60
+							</div>
+							<div class="title"><span>Time Left</span>
+							</div>
+						
+						</div>
+					</div>					
+					
+				</div>
+	<!--All Icons Ended-->	
+<!-- TEST WORDS -->
+				<div id="content" class="text-center">Test Words</div>
+<!-- Text Input-->
+				<div>
+					<input type="text" class="text-center" placeholder="type here" id="input">
+				</div>
+				<!-- keyboard -->
+				<div class="keyboard"></div>
+<!-- Reset Button -->
+				<div class ="restart">
+					<button type="button"class=" btn btn-primary btn-lg">Restart</button>
+				</div>
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">You have completed your test</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group">
+			<label class="sr-only">Enter your name</label>
+			<input class ="form-control" id ="name" placeholder="Enter your name">
+	   </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="downloadCer" class="btn btn-primary">Download Your Certificate</button>
+      </div>
+    </div>
+  </div>
+</div>	
+<!-- Modal Ended -->			
+		   </div>
+	   
+	   </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+        <script type="text/javascript" src="js/dataModule.js"></script>        <script type="text/javascript" src="js/certificateModule.js"></script>
+        <script type="text/javascript" src="js/wordsModule.js"></script>
+		 <script type="text/javascript" src="js/UIModule.js"></script>
+        <script type="text/javascript" src="js/eventsModule.js"></script>
+		 <script type="text/javascript" src="js/code.js"></script>
+    </body>
+</html>

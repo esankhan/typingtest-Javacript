@@ -1,0 +1,102 @@
+/* body Element*/
+
+body {
+	background: url("images/backgg.jpg") no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	color:white;
+	
+}
+
+.meas-container {
+	background-color: rgba(236,34,2020,0.5);
+}
+
+.row {
+	font-size: 30px;
+	padding: .65em;
+}
+
+.title {
+	font-size: 14px;
+}
+
+.typicon {
+	height:40px;
+}
+
+#content {
+	height: 120px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 10px auto;
+	font-size: 30px;
+	overflow: hidden;
+	line-height: 40px;
+
+	}
+.keyboard {
+	min-height: 200px;
+	max-height: 300px;
+	background: url("images/keyboard.png") no-repeat center center;
+	background-size: contain;
+	margin-top: 10px;
+}
+
+.change {
+	margin-top:8px;
+	height:25px;
+	font-size: 16px;
+}
+
+#input {
+	background-color : rgba(239, 37, 188, 0.3);
+	width: 100%;
+	font-size: 30px;
+	padding: 10px;
+	color : rgb(1, 244, 2333);
+}
+
+
+.restart {
+	margin-top: 20px;
+	opacity: .8;
+}	
+
+.scoreDown, .scoreUp{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.scoreDown{
+	margin-top: 5px;
+    background: mediumvioletred;
+}
+
+.scoreUp{
+	margin-top: 5px;
+    background: greenyellow;
+    color: black
+}
+
+.modal {
+	color: black;
+}
+
+
+
+.activeWord{
+background-color: greenyellow;
+border-radius:5px;
+}
+.correctChar{
+	color:blue;
+}
+
+.wrongChar {
+color: red;
+}
+
+.modal-result {
+	font-size: 20px;
+}
